@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+	title="nilsons test site"
+	description="A little corner of the internet."
+>
+	<h1>Hello.</h1>
+
+	<p>
+		Welcome to my website. This is my little corner
+		of the internet. This is a link to my <a href={`${import.meta.env.BASE_URL}about`}>About</a> Page.
+	</p>
+		<img src="astro-site/boat1.jpg" alt="boat" style="width: 500px; border-radius: 20px;" />
+
+		<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Year</th>
+			<th>Platform</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Game One</td>
+			<td>2024</td>
+			<td>PC</td>
+		</tr>
+
+		<tr>
+			<td>Game Two</td>
+			<td>2025</td>
+			<td>Web</td>
+		</tr>
+	</tbody>
+</table>
+
+<style>
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	th,
+	td {
+		padding: 12px;
+		border-bottom: 1px solid #ccc;
+		text-align: left;
+	}
+
+	th {
+		font-weight: bold;
+	}
+</style>
+
+</Layout>
