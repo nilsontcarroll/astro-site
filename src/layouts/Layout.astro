@@ -36,14 +36,14 @@ const {
 
 					<div class="dropdown-menu">
 						{item.children.map((child) => (
-							<a href={`${import.meta.env.BASE_URL}${child.url.replace(/^\//, "")}`}>
+							<a href={`${import.meta.env.BASE_URL}/${child.url.replace(/^\//, "")}`}>
 								{child.title}
 							</a>
 						))}
 					</div>
 				</div>
 			) : (
-				<a href={`${import.meta.env.BASE_URL}${item.url.replace(/^\//, "")}`}>
+				<a href={`${import.meta.env.BASE_URL}/${item.url.replace(/^\//, "")}`}>
 					{item.title}
 				</a>
 			)}
